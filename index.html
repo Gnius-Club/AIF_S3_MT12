@@ -38,10 +38,11 @@
                 <li><a href="#activity-2">2</a></li>
                 <li><a href="#activity-3">3</a></li>
                 <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
             </ul>
 
             <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>💡 Esta misión se centra en el control de actuadores y la diferencia entre control reactivo y predictivo.</p>
                 <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
             </div>
         </aside>
@@ -70,20 +71,22 @@
                                 <td>
                                     <strong>Objetivos:</strong>
                                     <ul>
-                                        <li>Que los estudiantes aprendan a controlar actuadores (Bomba de Agua, Micro-servo) con MicroPython.</li>
+                                        <li>Que los estudiantes comprendan el rol de los actuadores (Bomba de Agua, Micro-servo) y aprendan a controlarlos.</li>
                                         <li>Que diseñen un proyecto libre que integre un sensor y un actuador en un sistema de control autónomo.</li>
-                                        <li>Que comprendan la diferencia conceptual entre control basado en reglas (reactivo) y control predictivo con IA.</li>
+                                        <li>Que diferencien conceptualmente entre control basado en reglas (reactivo) y control predictivo con IA (proactivo).</li>
                                     </ul>
                                     <strong>Secuencia de Clase:</strong>
                                     <ul>
-                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Exploración de actuadores físicos y la diferencia entre control reactivo y predictivo.</li>
-                                        <li><strong class="tactic-highlight">⚡BRAIN SPARK (DISEÑO LIBRE):</strong> Ideación, Vibe Coding, e implementación de un sistema de control autónomo.</li>
-                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos y reflexión sobre la seguridad y el futuro de los sistemas de control.</li>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Análisis profundo y contextualización de la misión con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
+                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos, síntesis de "insights" y reflexión iterativa.</li>
                                     </ul>
                                     <strong>Entregable Clave:</strong>
                                     <ul>
-                                        <li>Un sistema de control autónomo funcional que utiliza un sensor para tomar una decisión y activar un actuador físico (servo o bomba).</li>
-                                        <li>Código que demuestra la implementación de un bucle de control (Sensor -> Lógica -> Actuador).</li>
+                                        <li>Un script funcional y original en MicroPython que implementa un sistema de control de bucle cerrado, utilizando un sensor para activar un actuador físico.</li>
+                                        <li>Comprensión demostrada de la depuración de sistemas electromecánicos (ej. 'jitter' del servo) y del pensamiento de diseño orientado a la seguridad.</li>
                                     </ul>
                                 </td>
                                 <td>
@@ -93,19 +96,21 @@
                                         <li>Conexión a internet estable.</li>
                                         <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>) en modo Python.</li>
                                         <li>Chat "Agente Gnius" (Xolo) operativo.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-7).</li>
-                                        <li>Por equipo de 2: 1 Micro:bit v2 con placa IOTbit, cables, y una selección de sensores y actuadores (Micro-servo, Bomba de Agua).</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2.</li>
+                                        <li>1 Micro-servo y/o 1 Bomba de Agua por equipo.</li>
+                                        <li>Sensores variados (Luz, Temperatura, etc.) para la ideación libre.</li>
                                     </ul>
                                     <strong>Preparación Previa para ESTA Sesión:</strong>
                                     <ol>
                                         <li><strong>Verificación del Entorno Digital y Físico (Interna):</strong>
                                             <ul>
-                                                <li>Asegurar que los servos y las bombas de agua estén funcionales. Tener recipientes con agua listos para las pruebas.</li>
-                                                <li>Verificar la funcionalidad del chat de Xolo y tener cargada la presentación.</li>
+                                                <li>Asegurar que los servos y las bombas de agua estén funcionales.</li>
+                                                <li>Tener clara la conexión de pines de los actuadores a la IOTbit.</li>
                                             </ul>
                                         </li>
-                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar el control de servos (PWM) y motores DC (bomba). Estar preparado para discutir el concepto de control predictivo vs. reactivo.</li>
-                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener un sistema de "Dispensador de Comida" o similar completamente funcional para demostrar el ciclo de control y anticipar problemas como el 'jitter' del servo.</li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar el control de servos (PWM) y motores DC. Estar preparado para guiar la discusión sobre control reactivo vs. predictivo y los modos de fallo de los actuadores.</li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener un proyecto funcional, como el "Dispensador de Comida para Peces", para demostrar la integración de sensor, lógica y actuador, y para anticipar problemas como el 'jitter'.</li>
                                     </ol>
                                 </td>
                             </tr>
@@ -117,29 +122,29 @@
 
             <div class="activity-card" id="activity-1">
                 <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
-                <p>Establecer el tono de la sesión, activar la IA y presentar el concepto de "acción" en robótica.</p>
+                <p>Establecer el tono de la sesión, activar la IA y presentar la fase de "acción".</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Contexto de la Misión</h3>
-                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y enmarca la sesión como la culminación del ciclo de la robótica.</p>
+                            <h3>Paso 1: Bienvenida y Contexto Estratégico</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque de la misión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Buenos días, ingenieros. Hemos pasado el último módulo dando a nuestros sistemas la capacidad de 'sentir' el mundo. Hoy, completamos el ciclo de la robótica: Percepción → Pensamiento → **Acción**. Vamos a darle a nuestros sistemas la capacidad de actuar sobre el mundo físico, de mover cosas, de causar un efecto. Trabajaremos con actuadores.</p>
+                                <p class="dialogue assistant">Buenos días, ingenieros. Hemos pasado el último módulo dando a nuestros sistemas la capacidad de 'sentir' el mundo. Hoy, completamos el ciclo de la robótica: Percepción -> Pensamiento -> **Acción**. Vamos a darle a nuestros sistemas la capacidad de actuar sobre el mundo físico, de mover cosas, de causar un efecto. Trabajaremos con actuadores.</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Activación y Personalización de Xolo</h3>
-                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual con Xolo.</p>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Inicien su sesión con Xolo como es habitual, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo, soy Laura, perfil Ingeniero, y me enfoco en la robótica aplicada. Lista para la Misión 12.'</strong></p>
+                                <p class="dialogue assistant">Inicien su sesión con Xolo como de costumbre, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo. Soy Ana, perfil Ingeniero, y me enfoco en la robótica aplicada.'</strong> Esto preparará a su socio de IA para la sesión. Procedan.</p>
                             </div>
                         </div>
                     </div>
@@ -147,30 +152,18 @@
             </div>
 
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: A.I. GYM (Actuadores y Control Predictivo) ⏰ 10 minutos</h2>
-                <p>Construir el andamiaje conceptual sobre los actuadores y la diferencia entre control reactivo y predictivo.</p>
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 2 minutos</h2>
+                <p>Clarificar la meta de aprendizaje enfocada en el control de actuadores y sistemas autónomos.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Investigación sobre Actuadores</h3>
-                            <p>(Proyectar Diapositiva 3) El facilitador dirige a los alumnos para que investiguen los componentes del día.</p>
+                            <h3>Paso 1: "I Can Statement" de Actuación</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Su investigación con Xolo hoy se centra en la acción. De forma individual, usen este prompt: <strong>'Xolo, explica cómo controlar un micro-servo y una bomba de agua. ¿Para qué tipo de tareas es ideal cada uno?'</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Control por Reglas vs. Control Predictivo</h3>
-                            <p>(Proyectar Diapositiva 4) El facilitador guía la siguiente consulta, enfocada en la evolución de la autonomía.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, una idea crucial sobre la autonomía. Pregúntenle a Xolo: <strong>'¿Cuál es la diferencia entre un sistema de control que sigue reglas fijas y uno que usa IA para predecir y actuar?'</strong> Esto les mostrará el siguiente nivel de la robótica inteligente.</p>
+                                <p class="dialogue assistant">La meta de hoy es hacer que las cosas se muevan. Al finalizar esta sesión, podrán afirmar: <strong>'Yo puedo controlar un actuador físico con código y diseñar un sistema que integra un sensor y un actuador para realizar una tarea autónoma.'</strong></p>
                             </div>
                         </div>
                     </div>
@@ -178,42 +171,30 @@
             </div>
 
             <div class="activity-card" id="activity-3">
-                 <h2>⚡ Actividad 3: Brain Spark (Diseño de Sistemas de Actuación) ⏰ 22 minutos</h2>
-                <p>Los estudiantes diseñan, implementan y depuran un proyecto creativo que integra sensores y actuadores.</p>
+                <h2>⚡ Actividad 3: A.I. GYM (Actuadores y Control Predictivo) ⏰ 10 minutos</h2>
+                <p>Facilitar una sesión de aprendizaje sobre los actuadores y la diferencia entre control reactivo y predictivo.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
-                             <p>(Proyectar Diapositiva 5) El facilitador presenta el desafío de diseño libre de sistemas de control.</p>
+                            <h3>Paso 1: Instrucción para el Aprendizaje Conceptual</h3>
+                            <p>(Proyectar Diapositiva 4 y 5) El facilitador dirige a los alumnos para que aprendan sobre los actuadores y los tipos de control.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, su misión como ingenieros de control. Formen sus parejas. Su desafío es diseñar un proyecto **libre** que utilice un actuador (servo o bomba) para interactuar con el mundo físico, controlado por la lógica de un sensor. Pueden construir un dispensador de comida, un sistema de auto-nivelación, una barrera de acceso, o un sistema de riego. El concepto es suyo.</p>
+                                <p class="dialogue assistant">Iniciamos el A.I. GYM. Su aprendizaje con Xolo hoy es doble. Primero, pregunten: <strong>'Xolo, explica cómo controlar un micro-servo y una bomba de agua.'</strong> Una vez que entiendan los 'músculos', exploren el 'cerebro': <strong>'Ahora, explícame la diferencia entre un sistema de control por reglas y uno predictivo.'</strong></p>
                             </div>
                         </div>
                     </div>
-                    <div class="step-card">
+                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Ideación, Vibe Coding y Generación</h3>
-                            <p>(Proyectar Diapositiva 6) Las parejas definen su 'vibe' y colaboran con Xolo.</p>
+                            <h3>Paso 2: Supervisión y Guía del Facilitador</h3>
+                            <p>El facilitador circula, refuerza conceptos y sugiere preguntas de profundización.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                 <p class="dialogue assistant">Discutan y definan su lógica de control. Luego, descríbanla a Xolo. Por ejemplo: <strong>'Xolo, vibe de dispensador de comida para peces: si es de día (sensor de luz) Y se presiona el botón A, un servo gira para soltar comida y luego vuelve a su posición.'</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Implementación y Depuración Electromecánica</h3>
-                             <p>(Proyectar Diapositiva 7) Las parejas implementan el código y enfrentan desafíos de hardware.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">Implementen sus sistemas. Los actuadores como los servos pueden ser sensibles. Si su servo vibra mucho o no se mueve correctamente, es un problema común llamado 'jitter'. Describan este comportamiento a Xolo. Él los guiará para diagnosticar las posibles causas, que a menudo son la alimentación eléctrica o una señal de control ruidosa."</p>
+                                <p class="dialogue assistant">(Mientras circula) "La diferencia entre reactivo y proactivo es clave. Para asegurar que la entienden, pregúntenle a Xolo: <strong>'¿Por qué un sistema de control de tráfico usaría IA predictiva en lugar de simples reglas basadas en el color del semáforo?'</strong> O para los actuadores: <strong>'¿Qué tipo de actuador usarías para una tarea que requiere mucha fuerza pero no precisión de ángulo?'</strong>"</p>
                             </div>
                         </div>
                     </div>
@@ -221,42 +202,85 @@
             </div>
 
             <div class="activity-card" id="activity-4">
-                <h2>⚡ Actividad 4: Gnius STORM (Reflexión sobre Control y Seguridad) ⏰ 5 minutos</h2>
-                <p>El facilitador modera una reflexión final enfocada en los modos de fallo y la mejora de los sistemas autónomos.</p>
+                 <h2>⚡ Actividad 4: Brain Spark (Sistemas de Actuación) ⏰ 22 minutos</h2>
+                <p>Los estudiantes diseñan, implementan y depuran un proyecto original que integra sensores y actuadores.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
-                            <p>Los alumnos reflexionan individualmente sobre la seguridad de su sistema.</p>
+                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
+                             <p>(Proyectar Diapositiva 6) El facilitador presenta el desafío de diseño libre y da la instrucción de formar parejas.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Vamos a nuestro cierre. Primero, un minuto de reflexión individual. Piensen: ¿Qué pasaría si el actuador de su sistema fallara en la posición 'activado'? Por ejemplo, si la bomba de agua nunca se apagara. ¿Qué riesgo implicaría?</p>
+                                <p class="dialogue assistant">Ahora, su misión como ingenieros de control. Formen sus parejas. Su misión es diseñar un proyecto **libre** que utilice un actuador (servo o bomba) para interactuar con el mundo físico, controlado por la lógica de un sensor. Pueden construir un dispensador, un sistema de auto-nivelación, una barrera de acceso, o un sistema de riego. El diseño es suyo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Diseño de la "Vibe" y Generación de Código</h3>
+                            <p>(Proyectar Diapositiva 7) Las parejas diseñan su sistema de control, lo comunican a Xolo y reciben el código base.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Definan la 'vibe' de su sistema y luego trabajen con Xolo para generar el código. Sean precisos. Por ejemplo: <strong>'Xolo, queremos un dispensador de comida para peces. Un servo debe girar para soltar comida solo si el sensor de luz detecta que es de día Y se presiona un botón de alimentar.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación y Depuración de Sistemas Electromecánicos</h3>
+                             <p>(Proyectar Diapositiva 8 y 9) Las parejas implementan su sistema, enfrentando los desafíos de la interacción electromecánica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Implementen sus sistemas. Los actuadores introducen nuevos desafíos. Los servos pueden vibrar o 'hacer jitter'. Las bombas necesitan la polaridad correcta. Si se encuentran con un problema, descríbanlo a Xolo. Por ejemplo: <strong>'Xolo, nuestro servo vibra mucho y no se queda quieto.'</strong> Él los guiará para diagnosticar si es un problema de alimentación, de señal o del propio componente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Reflexión) ⏰ 5 minutos</h2>
+                <p>El facilitador modera una reflexión final enfocada en la seguridad y la evolución de los sistemas de control.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
+                            <p>(Proyectar Diapositiva 10) Instrucción para la reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Bien, para cerrar, nuestro Think-Pair-Share. Individualmente, un minuto para pensar: ¿Qué pasaría si el actuador de su sistema fallara en la posición 'activado'? ¿Qué riesgo implicaría?</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Gnius STORM (Pair - Parejas)</h3>
-                            <p>Los alumnos discuten en parejas cómo un sistema predictivo podría mejorar su diseño.</p>
+                            <p>Los alumnos discuten la evolución de su sistema hacia el control predictivo.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, en parejas, discutan cómo un sistema de control predictivo, de los que usa IA, podría haber mejorado el sistema que construyeron hoy. ¿Qué podría anticipar en lugar de solo reaccionar? Tienen dos minutos.</p>
+                                <p class="dialogue assistant">Ahora, en parejas, discutan durante dos minutos cómo un sistema de control predictivo, basado en IA, podría haber mejorado el sistema que construyeron hoy. ¿Qué predeciría y cómo actuaría de forma proactiva?</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 3: Gnius STORM (Share & Synthesis)</h3>
-                            <p>Algunas parejas comparten su proyecto y el facilitador cierra el módulo.</p>
+                            <p>Algunas parejas comparten sus proyectos y el facilitador cierra la sesión y el módulo.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Escuchemos de algunas parejas. Compartan el sistema de actuación que diseñaron y qué lo hace útil o innovador. (Escuchar 2-3 respuestas). Excelente. Han completado el ciclo completo de la robótica. Sus creaciones ahora no solo perciben y piensan, sino que actúan e impactan el mundo físico. Esta es la base de toda la robótica avanzada. Están listos para el siguiente módulo, donde llevaremos nuestros sistemas a un nuevo nivel de profesionalismo con plataformas de IoT avanzadas y Gemelos Digitales.</p>
+                                <p class="dialogue assistant">Escuchemos a algunas parejas. Compartan el sistema de actuación que diseñaron y qué lo hace útil o innovador. (Escuchar respuestas). Han completado el ciclo completo de la robótica. Sus creaciones ahora perciben, piensan y actúan. Han explorado la diferencia entre reaccionar y predecir. Esta es la base de toda la robótica avanzada. Están listos para el siguiente módulo, donde llevaremos nuestros sistemas a un nuevo nivel de profesionalismo con plataformas de IoT avanzadas y Gemelos Digitales.</p>
                             </div>
                         </div>
                     </div>
